@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-3</title>
+    <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/55eff178ab.js" crossorigin="anonymous"></script>
+    <!-- tailwind cdn -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+
+    <!-- Manrope font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main  class="max-w-screen-xl  px-16 lg:px-28">
+        <!-- navbar section -->
+         <section class="rounded mx-auto">
+            <nav class=" mx-auto px-12 md:px-24 py-4 md:py-12 flex-col">
+                <div class="navbar">
+                    <div class="navbar-start">
+                      <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                          
+                        </div>
+                        <ul
+                          tabindex="0"
+                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2">
+                          <li><a>Item 1</a></li>
+                          <li>
+                            <a>Parent</a>
+                            <ul class="p-2">
+                              <li><a>Submenu 1</a></li>
+                              <li><a>Submenu 2</a></li>
+                            </ul>
+                          </li>
+                          <li><a>Item 3</a></li>
+                        </ul>
+                      </div>
+
+                      <a class="btn btn-outline text-xl">
+                        <i class="fa-solid fa-arrow-up-long rotate-45 bg-[#ABEF5F] w-7 h-7 pt-1 rounded-full"></i>
+                        Rinterio</a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                      <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact us</a></li>
+                      </ul>
+                    </div>
+                    <div class="navbar-end">
+                        <button class="bg-[#ABEF5F] px-5 py-3 rounded-full 
+                         text-black font-bold">Book Consult  <i class="fa-solid fa-arrow-right 
+                         -rotate-45 w-7 h-7 rounded-full text-xl bg-black text-white"></i></button>
+                      <!-- <a class="btn">Button</a> -->
+                    </div>
+                  </div>
+            </nav>
+            <div class=" text-center">
+                <img class="mx-auto" src="./assets/banner.png" alt="">
+                <h1 class="text-5xl text-center text-black font-bold">
+                    A barn house of this design has a <br>
+                     striking appearance</h1>
+                     <p class="text-center pt-8 mb-8 text-gray-600 ">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
+
+                     <button class="bg-[#ABEF5F80] px-5 py-3 justify-center items-center rounded-full 
+                     text-black font-bold mb-12">View Details <i class="fa-solid fa-arrow-right 
+                     -rotate-45 w-7 h-7 rounded-full text-xl bg-[#7dc728] text-white"></i></button>
+
+            </div>
+            <!-- About US -->
+             <section class="bg-slate-100 mx-auto px-24 py-12 mb-16">
+                    <img src="./assets/Vector.png" alt="">
+                    <div class="flex-row md:flex justify-around">
+                        <!-- about us -->
+                         <div class="p-3 w-1/2">
+                            <a class="btn font-bold">
+                                <i class="fa-solid fa-arrow-up-long rotate-90 w-7 h-7 pt-1 rounded-full"></i>
+                                About Us</a>
+                                <h1 class="text-4xl text-black font-bold">We design thoughtful, liveable spaces</h1>
+                                <p class="text-gray-700 mt-3">A residential building includes any building that comes with sleeping accommodation for normal residential purposes, without or with dining and cooking facilities..</p>
+                                <!-- commercial -->
+                                <div class="flex mt-4 gap-3 p-2 rounded-lg w-full bg-white">
+                                    <!-- img -->
+                                    <div> <img src="./assets/commercial.png" alt=""></div>
+                                    <!-- text -->
+                                     <div> 
+                                        <h1 class="text-xl font-bold text-black">Commercial</h1>
+                                        <p>Commercial buildings are buildings that are used for commercial purposes, and include office buildings, warehouses, and retail buildings.</p>
+                                     </div>
+                                </div>
+                                <!-- Residential -->
+                                <div class="flex mt-4 gap-3 p-5 rounded-lg w-full bg-white">
+                                    <!-- img -->
+                                    <div> <img src="./assets/residential.png" alt=""></div>
+                                    <!-- text -->
+                                     <div> 
+                                        <h1 class="text-xl font-bold text-black">Residential</h1>
+                                        <p>Residential housing means any building, structure or portion thereof that is primarily occupied, or designed or intended primarily for occupancy,</p>
+                                     </div>
+                                </div>              
+                         </div>
+                         <!-- img -->
+                          <div class="w-1/2">
+                            <img src="./assets/Rectangle.png" alt="">
+                          </div>
+
+                    </div>
+
+             </section>
+
+         </section>
+    </main>
+    
+</body>
+</html>
