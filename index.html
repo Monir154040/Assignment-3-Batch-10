@@ -32,8 +32,8 @@
     <main  class="max-w-screen-xl  px-16 lg:px-28">
         <!-- navbar section -->
          <section class="rounded mx-auto">
-            <nav class=" mx-auto px-12 md:px-24 py-4 md:py-12 flex-col">
-                <div class="navbar">
+            <nav class=" mx-auto px-2 md:px-4 py-4 md:py-12 flex-col">
+                <div class="navbar flex justify-between gap-20">
                     <div class="navbar-start">
                       <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -54,10 +54,11 @@
                         </ul>
                       </div>
 
-                      <a class="btn btn-outline text-xl">
+                      <a class="btn btn-outline text-xl border-none ">
                         <i class="fa-solid fa-arrow-up-long rotate-45 bg-[#ABEF5F] w-7 h-7 pt-1 rounded-full"></i>
                         Rinterio</a>
                     </div>
+                    
                     <div class="navbar-center hidden lg:flex">
                       <ul class="menu menu-horizontal px-1">
                         <li><a>Home</a></li>
@@ -67,11 +68,19 @@
                         <li><a>Contact us</a></li>
                       </ul>
                     </div>
-                    <div class="navbar-end">
-                        <button class="bg-[#ABEF5F] px-5 py-3 rounded-full 
-                         text-black font-bold">Book Consult  <i class="fa-solid fa-arrow-right 
-                         -rotate-45 w-7 h-7 rounded-full text-xl bg-black text-white"></i></button>
+                    
+                    <div class="navbar-end hidden md:flex justify-between">
+                      <div class="hidden lg:flex gap-2">
+                        <i class="fa-solid fa-magnifying-glass text-left"></i>
+                        <i class="fa-solid fa-cart-shopping"></i></div>
+                      
+                        <button class="bg-[#ABEF5F] mx-2 px-3 py-3 justify-center items-center rounded-full 
+                        text-black font-bold">Book Consult <i class="fa-solid fa-arrow-right 
+                        -rotate-45 w-7 h-7 rounded-full text-xl bg-black text-white"></i></button>
                       <!-- <a class="btn">Button</a> -->
+                    </div>
+                    <div class="text-right md:hidden ">
+                      <i class="fa-solid fa-bars"></i>
                     </div>
                   </div>
             </nav>
@@ -80,7 +89,7 @@
                 <h1 class="text-5xl text-center text-black font-bold">
                     A barn house of this design has a <br>
                      striking appearance</h1>
-                     <p class="text-center pt-8 mb-8 text-gray-600 ">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
+                     <p class="text-center pt-8 mb-8 text-gray-600 ">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metalaccents, and large <br>  windows that flood the space with natural light.</p>
 
                      <button class="bg-[#ABEF5F80] px-5 py-3 justify-center items-center rounded-full 
                      text-black font-bold mb-12">View Details <i class="fa-solid fa-arrow-right 
@@ -88,9 +97,9 @@
 
             </div>
             <!-- About US -->
-             <section class="md:bg-slate-100 md:mx-auto md:px-12 md:pt-20  rounded">
-                    <img class="ml-12" src="./assets/Vector.png" alt="">
-                    <button class="btn bg-white ml-10 rounded-full">
+             <section class="md:bg-slate-100 md:mx-auto md:px-12 md:pt-10 rounded-2xl">
+                    <img class="ml-12 hidden md:flex" src="./assets/Vector.png" alt="">
+                    <button class="btn bg-white ml-16 rounded-full">
                         <i class="fa-solid fa-arrow-up-long rotate-90 w-5 h-5 rounded-full"></i>
                         About Us</a>
                     </button>
@@ -100,7 +109,7 @@
                         <div class="hero-content flex-col-reverse lg:flex-row-reverse">
                           <img
                             src="./assets/Rectangle.png"
-                            class="max-w-sm rounded-lg shadow-2xl" />
+                            class="max-w-sm rounded-lg shadow-xl" />
                             <div>
                                
                                 <div class="p-2 rounded-lg">
@@ -172,15 +181,114 @@
                                     <h2 class=" text-black font-bold text-xl">Budget Plannig</h2>
                                     <p> Electricity is a type of energy that consists of the movement of electrons</p>
                                   </div>
-
                                 
                             </div>
                     </div>
-
+             </section>
+             <!-- Explore our latest works -->
+             <section class="mx-auto py-5 text-center">
+              <div>
+                <button class="btn sm:btn-sm md:btn-md lg:btn-lg bg-[#ABEF5F33] rounded-full mb-5">
+                  <i class="fa-solid fa-arrow-right  w-7 h-7 rounded-full text-xl text-black"></i>
+                  Explore our latest works</button>
+                <h1 class="text-5xl font-bold">Our Latest Portfolio</h1>
+                <p class="mx-auto py-5 text-gray-500">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+              </div>
+              <div class=" gap-5">
+                <div class="sm:flex justify-between gap-4 py-5 ">
+                  <div class="w-full h-full">
+                    <img src="./assets/img1.png" alt="">
+                  </div>
+                  <div class="text-left my-4 ">
+                    <h1 class="text-3xl font-bold text-gray-600 mb-2">Commercial</h1>
+                    <p class="text-gray-400">Commercial buildings are buildings where commercial activities take place. Commercial buildings include office buildings, retail space, warehouses and more. This differs somewhat from commercial property, which also includes multi-family buildings like apartment buildings.</p>
+                  </div>
+                  <div class="w-full h-full">
+                    <img src="./assets/img2.png" alt="">
+                  </div>
+                </div>
+                
+                <div class="sm:flex justify-between gap-4 py-5 text-left">
+                  <div class="h-full w-full mb-4">
+                    <img src="./assets/img3.png" alt="">
+                  </div>
+                  <div class="h-full w-full mb-4"><img src="./assets/img4.png" alt=""></div>
+                  <div class="mb-4"><h1 class="text-3xl font-bold text-gray-600 mb-2">Commercial</h1>
+                    <p class="text-gray-400">Commercial buildings are buildings where commercial activities take place. Commercial buildings include office buildings, retail space, warehouses and more. This differs somewhat from commercial property, which also includes multi-family buildings like apartment buildings.</p></div>
+                    <div class="h-full w-full"><img src="./assets/img5.png" alt=""></div>
+                </div>
+                
+                <!-- <div class=""><img src="./assets/img5.png" alt=""></div> -->
+              </div>
              </section>
 
          </section>
+         <!-- lets connect -->
+         <section class="bg-[url('/assets/bg.jpg')] my-2 rounded-lg text-center">
+          
+          <button class="bg-[#ABEF5F33] px-5 py-3 mt-5 justify-center items-center rounded-full 
+          text-black font-bold mb-4"> <i class="fa-solid fa-arrow-right 
+           w-7 h-7 rounded-full text-xl text-black"></i>lets connect </button>
+           <h1 class="text-5xl text-black">Let’s Discuss Next Project</h1>
+           <p class="text-black mt-2 px-5">
+            A good discussion section includes analysis of any unexpected findings. This paragraph should begin with a description  of the unexpected finding, followed by a brief interpretation as to why you believe if necessary, its possible significance in relation to the overall study
+           </p>
+
+          <div class=" rounded-full mx-auto flex justify-center pb-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5  pt-8 ">
+
+              <input type="text" placeholder="First Name*" class="input input-bordered w-full max-w-xs" />
+              <input type="text" placeholder="Last Name*" class="input input-bordered w-full max-w-xs" />
+              <input type="text" placeholder="Phone Number*" class="input input-bordered w-full max-w-xs" />
+              <input type="text" placeholder="Email*" class="input input-bordered w-full max-w-xs" />
+              
+            </div>
+          </div>
+          <div class=" mx-2">
+            
+            <textarea class="textarea px-32 py-6" placeholder="Write your Message"></textarea>
+          </div> 
+          <div class="pt-5">
+            <button class="bg-[#ABEF5F] mx-auto px-20 py-3 justify-center items-center rounded-full 
+                     text-black font-bold mb-12">Sent Mail <i class="fa-solid fa-arrow-right 
+                     -rotate-45 w-7 h-7 rounded-full text-xl bg-black text-white"></i></button>
+          </div>
+           
+         </section>
     </main>
+    <!-- footer -->
+     <section class=" bg-black footer mx-auto justify-center pt-5">
+      <div class=" px-10">
+        <div class="flex py-5">
+          <a class="btn btn-neutral border-none mx-80 bg-black text-3xl font-bold text-center text-white">
+            <i class="fa-solid fa-arrow-up-long rotate-45 text-black bg-[#ABEF5F] w-7 h-7 pt-1 rounded-full"></i>
+            Rinterio</a>
+        </div>
+        
+      <p class="text-gray-400 mx-auto text-center px-40 py-5">The barn house captivates with its blend of rustic charm <br> and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+      <div class="items-center py-5 mx-auto">
+        <div class="navbar">
+          <div class="navbar-start">
+           
+          </div>
+          <div class="navbar-center  lg:flex">
+            <ul class="menu flex-col md:flex-row text-gray-400 bg-black">
+              <li><a>Home </a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          
+        </div>
+
+      </div>
+      <button class="bg-[#ABEF5F] mx-auto px-5 py-3 justify-center items-center rounded-full 
+                     text-black font-bold mb-12">Book Consult <i class="fa-solid fa-arrow-right 
+                     -rotate-45 w-7 h-7 rounded-full text-xl bg-black text-white"></i></button>
+      </div>
+     </section>
     
 </body>
-</html>
+</html>   
